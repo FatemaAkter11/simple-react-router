@@ -4,12 +4,21 @@ import Home from './components/Home/Home';
 import Friends from './components/Friends/Friends';
 import About from './components/About/About';
 import NotFound from './components/NotFound/NotFound';
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+// import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <Friends></Friends>
+    </div>
+  );
+}
+
+export default App;
+
+
+/*
+<BrowserRouter>
         <Switch>
           <Route path="/home">
             <Home></Home>
@@ -28,8 +37,4 @@ function App() {
           </Route>
         </Switch>
       </BrowserRouter>
-    </div>
-  );
-}
-
-export default App;
+*/
