@@ -7,6 +7,7 @@ import NotFound from './components/NotFound/NotFound';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Header from './components/Header/Header';
 import FriendDetail from './components/FriendDetail/FriendDetail';
+import Culture from './components/Culture/Culture';
 
 function App() {
   return (
@@ -26,8 +27,11 @@ function App() {
           <Route path="/friend/:friendId">
             <FriendDetail></FriendDetail>
           </Route>
-          <Route path="/about">
+          <Route exact path="/about">
             <About></About>
+          </Route>
+          <Route exact path="/about/culture">
+            <Culture></Culture>
           </Route>
           <Route path="*">
             <NotFound></NotFound>
