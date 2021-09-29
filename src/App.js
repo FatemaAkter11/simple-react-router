@@ -5,11 +5,13 @@ import Friends from './components/Friends/Friends';
 import About from './components/About/About';
 import NotFound from './components/NotFound/NotFound';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <Header></Header>
         <Switch>
           <Route exact path="/">
             <Home></Home>

@@ -1,0 +1,14 @@
+.header-container{
+    text-decoration: none;
+    background-color: black;
+    font-size: x-large;
+    width: 50%;
+    margin-left: 375px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.NavLink{
+    text-decoration: none;
+    padding-right: 20px; 
+    color: white;
+}
